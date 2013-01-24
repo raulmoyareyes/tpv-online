@@ -1,0 +1,1 @@
+El acceso directo no funciona porque hay que copiar la carpeta Estanco Web a d:\workspace

@@ -1,0 +1,410 @@
+
+/*******************************************************************************/
+/* TPV Estanco v.1 *************************************************************/
+/* CSS by Raúl Moya Reyes ******************************************************/
+/*******************************************************************************/
+
+/* Ordenado: Etiquetas, clases, identificadores y alfabeticamente */
+
+
+/*******************************************************************************/
+/* Estilo para etiquetas 
+/*******************************************************************************/
+::-moz-selection {background: transparent;}
+::selection {background: transparent;}
+
+body {
+	background: #FAFAFA;
+	font-size: 14px;
+	font-weight: bold;
+	height: 100%;
+	text-align: center;
+	width: 100%;
+}
+
+input {
+	border: 0;
+	background: #D6D6D6;
+	font-weight: bold;
+	margin: 2px;
+	padding: 0;
+}
+
+table {
+	margin: 5px 2px;
+	width: 527px;
+}
+
+thead{
+	background: #D6D6D6;
+}
+
+tr {
+	height: 40px;
+	text-align: left;
+	width: 490px;
+}
+
+
+/*******************************************************************************/
+/* Estilo para clases
+/*******************************************************************************/
+
+/* botones */
+.boton{
+	height: 50px;
+	width: 170px;
+}
+
+.boton2{
+	height: 50px;
+	width: 206px;
+}
+
+.boton3{
+	height: 50px;
+	margin-bottom: 5px;
+	width: 153px;
+}
+
+.boton4{
+	background: #444444;
+	color: #FFFFFF;
+	height: 50px;
+	margin-bottom: 5px;
+	width: 153px;
+}
+.boton5{
+	height: 50px;
+	margin-bottom: 5px;
+	width: 314px;
+}
+.boton6{
+	height: 50px;
+	margin-bottom: 5px;
+	width: 50px;
+}
+
+/* variaciones de color */
+.cGreen {
+	background: #629C44;
+	color: #FFFFFF;
+}
+.cRed {
+	background: #B70F0A;
+}
+
+.cYellow {
+	background: #F4EB49;
+}
+
+/* variaciones de tamaño */
+.tamaño12 {
+	font-size: 12px;
+}
+.tamaño18 {
+	font-size: 18px;
+}
+
+.tamaño26 {
+	font-size: 26px;
+}
+
+/* input del teclado */
+.itext{
+	height: 50px;
+	margin-bottom: 5px;
+	padding: 0 10px;
+	text-align: right;
+	width: 294px;
+}
+
+/* input del cambio */
+.iEntregado {
+	height: 30px;
+	margin: 2px 10px;
+	padding: 0 10px;
+	text-align: right;
+	width: 200px;
+}
+.iCambio {
+	background: #444444;
+	color: #FFFFFF;
+	height: 30px;
+	margin: 10px;
+	padding: 0 10px;
+	text-align: right;
+	width: 215px;
+}
+.iTotal {
+	background: #444444;
+	color: #FFFFFF;
+	height: 30px;
+	margin: 20px 0;
+	padding: 0;
+	text-align: right;
+	width: 120px;
+}
+
+/* input del producto */
+.iProducto {
+	background: #444444;
+	color: #FFFFFF;
+	font-size: 18px;
+	height: 40px;
+	margin: 10px;
+	padding: 0 10px;
+	text-align: right;
+	width: 575px;
+}
+
+/* tablas */
+.td1 {
+	padding-left: 10px;
+	width: 260px;
+}
+.td2 {
+	text-align: center;
+	width: 110px;
+}
+
+
+
+/* *****************************************************************************
+ * Estilo para identificadores 
+ *******************************************************************************/
+
+/* contenedor de la aplicación */
+#contenedor {
+	background: #7A7A7A;
+	display: inline-block;
+	margin: 10px auto;
+	padding: 10px;
+	text-align: left;
+	width: 1180px;
+}
+
+/* contenedor izquierda */
+#izquierda {
+	display: inline-block;
+	vertical-align: top;
+	width: 535px;
+}
+
+/* contenedor derecha */
+#derecha {
+	display: inline-block;
+	vertical-align: top;
+	width: 640px;
+}
+
+
+
+/* zona del dinero, fecha, etc *************************************************/
+/* contenedor para botones, reloj, importe, etc */
+
+#bTickets {
+	background-image: url(../icons/print.png);
+	background-repeat: no-repeat;
+}
+
+#bCobrar{
+	background-image: url(../icons/money.png);
+	background-repeat: no-repeat;
+}
+
+/* opciones del cambio */
+#cCambio {
+	background: #444444;
+	border: none;
+	color: #FFFFFF;
+	display: inline-block;
+	height: 80px;
+	margin: 5px 2px;
+	padding: 10px;
+	vertical-align: top;
+	width: 328px;
+}
+
+/* espacio para el total del ticket */
+#cTotal{
+	background: #444444;
+	border: none;
+	color: #FFFFFF;
+	display: inline-block;
+	height: 80px;
+	margin: 5px 2px;
+	padding: 10px;
+	text-align: right;
+	vertical-align: top;
+	width: 150px;
+}
+
+/* espacio para el reloj */
+#reloj {
+	background: #444444;
+	border: none;
+	color: #FFFFFF;
+	display: inline-block;
+	height: 50px;
+	margin: 2px;
+	text-align: center;
+	vertical-align: top;
+	width: 170px;
+}
+
+
+
+/* zona para el ticket *********************************************************/
+/* contenedor para el ticket */
+#bAñadirProducto {
+	background-image: url(../icons/plus.png);
+	background-repeat: no-repeat;
+}
+
+#bEliminarProducto {
+	background-image: url(../icons/minus.png);
+	background-repeat: no-repeat;
+}
+
+#bEliminarTicket {
+	background-image: url(../icons/ticketminus.png);
+	background-repeat: no-repeat;
+}
+
+#cTicket {
+	background: #FFFFFF;
+	height: 402px;
+	overflow: auto;
+	margin: 5px 2px;
+	width: 527px;
+}
+
+#ticket {
+	width: 500px;
+}
+
+
+/* zona para las opciones de los productos *************************************/
+/* contenedor para la zona de los productos */
+#bBuscar {
+	background-image: url(../icons/search.png);
+	background-repeat: no-repeat;
+}
+
+#bListaProductos {
+	background-image: url(../icons/list.png);
+	background-repeat: no-repeat;
+}
+
+#bProducto {
+	background-image: url(../icons/product.png);
+	background-repeat: no-repeat;
+}
+
+#cProducto {
+	background: #D6D6D6;
+	height: 250px;
+	margin: 5px 2px;
+	padding: 10px;
+	width: 615px;
+}
+
+#sProducto{
+	display: block;
+}
+
+#sBuscar {
+	display: none;
+}
+
+#sLista{
+	display: none;
+}
+
+
+/* zona para el teclado ********************************************************/
+#bAceptar {
+	background-image: url(../icons/acept.png);
+	background-repeat: no-repeat;
+}
+
+#bBorrar {
+	background-image: url(../icons/delete.png);
+	background-repeat: no-repeat;
+}
+
+/* zona para las opciones de configuracion y administracion ********************/
+/* contenedor para los botones */
+
+
+
+/* zona popUp ******************************************************************/
+/* contenedor popup */
+#popUp {
+	background: rgba(0,0,0,0.7);
+	display: none;
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	width: 100%;
+}
+
+#espacio {
+	background: #FFFFFF;
+	height: 500px;
+	margin: 0 auto;
+	width: 550px;
+}
+
+#espaciot {
+	height: 440px;
+	margin: 0 auto;
+	overflow: auto;
+	width: 550px;
+}
+
+#espaciot div {
+	margin: 0 auto;
+	width: 500px;
+}
+
+#espaciot table {
+	margin: 0 auto;
+	width: 500px;
+}
+
+
+/* zona acerca de ***************************************************************/
+/* contenedor popup */
+#acercaDe {
+	background: rgba(0,0,0,0.7);
+	display: none;
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	width: 100%;
+}
+
+#espacio2 {
+	background: #FFFFFF;
+	height: 300px;
+	margin: 0 auto;
+	width: 550px;
+}
+
+#espaciot2 {
+	height: 240px;
+	margin: 0 auto;
+	width: 550px;
+}
+
+
+
+/* *****************************************************************************
+ * Estilo para querys
+ *******************************************************************************/

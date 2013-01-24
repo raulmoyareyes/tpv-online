@@ -1,0 +1,160 @@
+
+<!-- ....................................................................................................... -->
+<!-- TPV Estanco v.1 ....................................................................................... -->
+<!-- HTML by Raúl Moya Reyes ............................................................................... -->
+<!-- ....................................................................................................... -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Estanco WEB</title>
+
+	<!-- Hojas de estilo ................................................................................... -->
+	<link rel="stylesheet" type="text/css" href="libs/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	
+	<!-- Contenedor de la aplicación ....................................................................... -->
+	<div id="contenedor">
+
+		
+		<div id="izquierda">
+			<!-- zona del dinero, fecha, etc -->
+			<input type="button" id="bTickets" class="boton cGreen tamaño18" value="TICKETS" title="Mostrar lista de tickets">
+			<input type="button" id="bCobrar" class="boton cYellow tamaño18" value="COBRAR" title="Cobrar">
+			<div id="reloj"></div>
+			<div id="cCambio">
+				<label>ENTREGADO</label><input type="text" id="entregado" class="iEntregado" value="0" readonly="readonly">
+				<label class="tamaño18">CAMBIO</label><input type="text" id="cambio" class="iCambio tamaño18" value="0.00 €" readonly="readonly">
+			</div>
+			<div id="cTotal">
+				<label>TOTAL</label>
+				<input type="text" id="total" class="iTotal tamaño26" value="0.00 €" readonly="readonly">
+			</div>
+
+
+			<!-- zona para el ticket -->
+			<input type="button" id="bAñadirProducto" class="boton tamaño12" value="AÑADIR PRODUCTO" title="Añadir producto al ticket">
+			<input type="button" id="bEliminarProducto" class="boton tamaño12" value="ELIMINAR PRODUCTO" title="Eliminar producto seleccionado del ticket">
+			<input type="button" id="bEliminarTicket" class="boton tamaño12" value="ELIMINAR TICKET" title="Eliminar ticket actual">
+
+			<table>
+				<thead>
+					<th class="td1">PRODUCTO</th>
+	                <th class="td2">CANTIDAD</th>
+	                <th class="td2">PRECIO</th>
+	                <th class="td2">SUBTOTAL</th>
+				</thead>
+			</table>
+			<div id="cTicket">
+				<table id="ticket">
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+
+
+		<div id="derecha">
+			<!-- zona para las opciones de los productos -->
+			<input type="button" id="bProducto" class="boton2 tamaño18 cGreen" value="PRODUCTO" title="Producto actual">
+			<input type="button" id="bBuscar" class="boton2 tamaño18" value="BUSCAR" title="Búsqueda de un producto">
+			<input type="button" id="bListaProductos" class="boton2 tamaño18" value="L. PRODUCTOS" title="Lista de productos">
+
+			<div id="cProducto">
+				<div id="sProducto">
+					<label class="tamaño18">CODIGO DE BARRAS</label>
+					<input type="text" id="codigo" class="iProducto" value="0" readonly="readonly">
+					<label class="tamaño18">CANTIDAD</label>
+					<input type="text" id="cantidad" class="iProducto" value="1" readonly="readonly">
+					<label class="tamaño18">PRECIO</label>
+					<input type="text" id="precio" class="iProducto" value="0" readonly="readonly">
+				</div>
+
+				<div id="sBuscar">
+					<label class="tamaño18">ESCRIBA UN NOMBRE A BUSCAR</label>
+					<input type="text" id="nombreBuscar" class="iProducto" value="" readonly="readonly">
+				</div>
+
+				<div id="sLista">
+					Lista de productos
+				</div>
+
+			</div>
+
+
+			<!-- zona para la teclado -->
+			<div id="cTeclado">
+				<input type="text" id="valores" class="itext" value="">
+				<input type="button" id="bBorrar" class="boton3" value="BORRAR" title="Borrar último digito">
+				<input type="button" id="bAceptar" class="boton3" value="ACEPTAR" title="Aceptar producto o modificación">
+
+				<input type="button" id="b7" class="boton3 tamaño18" value="7" title="7">
+				<input type="button" id="b8" class="boton3 tamaño18" value="8" title="8">
+				<input type="button" id="b9" class="boton3 tamaño18" value="9" title="9">
+				<input type="button" id="b+" class="boton3 tamaño18" value="+" title="+">
+				<input type="button" id="b4" class="boton3 tamaño18" value="4" title="4">
+				<input type="button" id="b5" class="boton3 tamaño18" value="5" title="5">
+				<input type="button" id="b6" class="boton3 tamaño18" value="6" title="6">
+				<input type="button" id="b-" class="boton3 tamaño18" value="-" title="-">
+				<input type="button" id="b1" class="boton3 tamaño18" value="1" title="1">
+				<input type="button" id="b2" class="boton3 tamaño18" value="2" title="2">
+				<input type="button" id="b3" class="boton3 tamaño18" value="3" title="3">
+				<input type="button" id="b*" class="boton3 tamaño18" value="*" title="*">
+				<input type="button" id="b0" class="boton5 tamaño18" value="0" title="0">
+				<input type="button" id="b." class="boton3 tamaño18" value="." title=".">
+				<input type="button" id="b/" class="boton3 tamaño18" value="/" title="/">
+			</div>
+
+
+			<!-- zona para opciones de administración y más -->
+			<input type="button" id="AcercaDe" class="boton4" value="ACERCA DE" title="Ver información acerca de la aplicación">
+			<input type="button" id="bAdministracion" class="boton4" value="ADMINISTRACION" title="Ver panel de administración">
+			<input type="button" id="bConfig" class="boton4" value="CONFIGURACION" title="Ver parámetros de configuración de la aplicación">
+			<input type="button" id="bCerrar" class="boton4 cRed" value="CERRAR" onClick="javascript:window.close();" title="Cerrar la aplicación">
+
+		</div>
+
+		<!-- zona popUp -->
+		<div id="popUp">
+			<div id="espacio">
+				<div id="espaciot">
+
+				</div>
+				<input type="button" id="bIzquierda" class="boton6" value="<">
+				<input type="button" id="bCerrarPop" class="boton2" value="CERRAR">
+				<input type="button" id="bImprimir" class="boton2" value="IMPRIMIR">
+				<input type="button" id="bDerecha" class="boton6" value=">">
+			</div>
+		</div>
+
+		<div id="acercaDe">
+			<div id="espacio2">
+				<div id="espaciot2">
+					<br>
+					<p class="tamaño26">Estanco Web v.1</p>
+					<p class="tamaño18">Raúl Moya Reyes</p>
+					<p>Iteracción Persona-Ordenador 2012-2013</p>
+				</div>
+				<input type="button" id="bCerrarAcerca" class="boton2" value="CERRAR">
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Librerias auxiliares y compatibilidad con navegadores ............................................. -->
+	<script type="text/javascript" src="libs/modernizr.js"></script>
+
+
+	<!-- Clases y funciones Javascritp propias ............................................................. -->
+	<script type="text/javascript" src="js/class.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+</html>

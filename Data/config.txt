@@ -1,0 +1,4 @@
+Aplicación optimizada para Firefox
+
+Para un uso optimo configurar los siguientes parámetros en 'about:config':
+- 'dom.allow_scripts_to_close_windows' en true
